@@ -1,0 +1,26 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: anh.dev.2002@gmail.com
+
+      - name: Set up Node.js
+        uses: anh.dev.2002@gmail.com
+        with:
+          node-version: 21
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Deploy to production
+        run: |
+          echo "Deploying to production..."
+          # Add your deployment commands here (e.g., SSH into a server, deploy to Heroku, etc.)
