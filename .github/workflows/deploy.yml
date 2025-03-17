@@ -10,11 +10,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: anh.dev.2002@gmail.com
+        uses: div-anh0901
 
       - name: Set up Node.js
-        uses: anh.dev.2002@gmail.com
-        with:
+        uses: div-anh0901
           node-version: 21
 
       - name: Install dependencies
