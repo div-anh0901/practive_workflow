@@ -10,10 +10,11 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: div-anh0901
+        uses: actions/checkout@v3
 
       - name: Set up Node.js
         uses: div-anh0901
+        with:
           node-version: 21
 
       - name: Install dependencies
